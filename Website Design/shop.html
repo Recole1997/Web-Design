@@ -17,6 +17,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
 
@@ -111,25 +112,25 @@
 	<div class="container mt-2 mb-4">
 	  <h1 class="py-4 text-center">Categories</h1>
 	  <div class="row justify-content-center">
-		<ul id="nav-tabs" class="nav">
+		<ul id="nav-tabs" class="nav"  id="myBtn">
 			<li class="nav-item">
-				<a class="nav-link active" href="#">All</a>
+				<a class="btn nav-link active" onclick="filterSelection('all')">All</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Merch - Ready Designs</a>
+				<a class="btn nav-link" onclick="filterSelection('merch')">Merch - Ready Designs</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Vector Designs</a>
+				<a class="btn nav-link" onclick="filterSelection('vector')">Vector Designs</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">PSD T-shirt</a>
+				<a class="btn nav-link" onclick="filterSelection('psd')">PSD T-shirt</a>
 			</li>
 		  </ul>
 	  </div>
       
       <h4 class="pt-4">Best Seller</h4>
 	  <div class="row">
-	  	<div class="col-sm-3">
+	  	<div class="col-sm-3 mycolumn merch">
 	  		<div class="card mb-2"  id="prod_container">
 			  <img src="images/prod1.jpg" class="card-img-top" alt="..." id="prod_img">
 			  <div class="card-body">
@@ -139,7 +140,7 @@
 			  </div>
 			</div>
 	  	</div>
-	  	<div class="col-sm-3">
+	  	<div class="col-sm-3 mycolumn vector">
 	  		<div class="card mb-2"  id="prod_container">
 			  <img src="images/prod2.jpg" class="card-img-top" alt="..." id="prod_img">
 			  <div class="card-body">
@@ -149,59 +150,9 @@
 			  </div>
 			</div>
 	  	</div>
-	  	<div class="col-sm-3">
+	  	<div class="col-sm-3 mycolumn psd">
 	  		<div class="card mb-2"  id="prod_container">
-			  <img src="images/prod1.jpg" class="card-img-top" alt="..." id="prod_img">
-			  <div class="card-body">
-			    <p class="card-title">Feather Design</p>
-			    <h5 class="card-text" id="prod_price">₱550</h5>
-			    <a href="#" class="stretched-link"></a>
-			  </div>
-			</div>
-	  	</div>
-	  	<div class="col-sm-3">
-	  		<div class="card mb-2"  id="prod_container">
-			  <img src="images/prod2.jpg" class="card-img-top" alt="..." id="prod_img">
-			  <div class="card-body">
-			    <p class="card-title">Feather Design</p>
-			    <h5 class="card-text" id="prod_price">₱550</h5>
-			    <a href="#" class="stretched-link"></a>
-			  </div>
-			</div>
-	  	</div>
-	  	<div class="col-sm-3">
-	  		<div class="card mb-2"  id="prod_container">
-			  <img src="images/prod1.jpg" class="card-img-top" alt="..." id="prod_img">
-			  <div class="card-body">
-			    <p class="card-title">Feather Design</p>
-			    <h5 class="card-text" id="prod_price">₱550</h5>
-			    <a href="#" class="stretched-link"></a>
-			  </div>
-			</div>
-	  	</div>
-	  	<div class="col-sm-3">
-	  		<div class="card mb-2"  id="prod_container">
-			  <img src="images/prod2.jpg" class="card-img-top" alt="..." id="prod_img">
-			  <div class="card-body">
-			    <p class="card-title">Feather Design</p>
-			    <h5 class="card-text" id="prod_price">₱550</h5>
-			    <a href="#" class="stretched-link"></a>
-			  </div>
-			</div>
-	  	</div>
-	  	<div class="col-sm-3">
-	  		<div class="card mb-2"  id="prod_container">
-			  <img src="images/prod1.jpg" class="card-img-top" alt="..." id="prod_img">
-			  <div class="card-body">
-			    <p class="card-title">Feather Design</p>
-			    <h5 class="card-text" id="prod_price">₱550</h5>
-			    <a href="#" class="stretched-link"></a>
-			  </div>
-			</div>
-	  	</div>
-	  	<div class="col-sm-3">
-	  		<div class="card mb-2"  id="prod_container">
-			  <img src="images/prod2.jpg" class="card-img-top" alt="..." id="prod_img">
+			  <img src="images/banner.jpg" class="card-img-top" alt="..." id="prod_img">
 			  <div class="card-body">
 			    <p class="card-title">Feather Design</p>
 			    <h5 class="card-text" id="prod_price">₱550</h5>
@@ -270,5 +221,8 @@
 	<div id="footer2">
 	    <p class="text-center pt-3" id="copyright_text">Copyright © 2021 All rights reserved | Design by Perfect Page</p>	
 	</div>
+
+	
+	<script src="js/my-js.js"></script>
 </body>
 </html>

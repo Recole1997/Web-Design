@@ -93,6 +93,14 @@ body {
 	font-size: 13px;
 }
 
+.mycolumn {
+  display: none;
+}
+
+.show {
+	display: block;
+}
+
 
 /* Contact Us */
 #sendBtn {
