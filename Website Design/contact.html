@@ -9,73 +9,28 @@
 	<!--- CSS Link -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/Style.css">
-	<!--- Javascript Link -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <!--- Custom CSS Link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+    <!-- Include Login and Sign Up Modal -->
+    <script src="js/login&signup-modal.js"></script>
 
-	<!-- Navigation Bar -->
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-	   <div class="container">
-	   	  <a href="shop.html"><img src="images/logo.png" style="height: 40px;"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-       	     <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-       	     <ul class="navbar-nav mx-auto">	
-       	  	    <li class="nav-item">
-       	  	 	   <a href="shop.html" class="nav-link">Home</a>
-       	  	    </li>
-       	  	    <li class="nav-item">
-       	  	 	   <a href="product.html" class="nav-link">Products</a>
-       	  	    </li>
-       	  	    <li class="nav-item">
-       	  	 	   <a href="about.html" class="nav-link">About Us</a>
-       	  	    </li>
-       	  	    <li class="nav-item">
-       	  	 	   <a href="faqs.html" class="nav-link">FAQs</a>
-       	  	    </li>
-       	  	    <li class="nav-item">
-       	  	 	   <a href="contact.html" class="nav-link  active">Contact Us</a>
-       	  	    </li>
-       	     </ul>
-       	     <ul class="navbar-nav ml-auto">
-       	     	<li class="nav-item">
-       	  	 	   <a href="#" class="nav-link">Login</a>
-       	  	 	</li>
-       	  	 	<li class="nav-item">
-       	  	 	   <a href="#" class="nav-link">Signup</a>
-       	  	 	</li>
-       	     </ul>
-       	     <form class="form-inline ml-auto">
-          	  <div class="input-group input-group-sm">
-          	    <input type="text" name="search" class="form-control" placeholder="Search products...">
-          	    <div class="input-group-append">
-          	  	  <button class="btn btn-primary" type="submit" id="searchbtn">
-          	  		  <span class="fas fa-search"></span>
-          	  	  </button>
-          	    </div>
-          	  </div>
-            </form>
-          </div>
-	   </div>
-	</nav>
+	<!-- Include Navigation Bar -->
+	<script src="js/navbar.js"></script>
 
 	<!-- Body content -->
 	<img src="images/contactUs_banner.jpg" class="img-fluid">
 	<div class="container mt-4 mb-4">
-		<h2 class="text-center" style="color:#111; font-size: 40px;">CONTACT US!</h2><hr>
-	   <div class="row mt-5">
+	    <h2 class="text-center" style="color:#111; font-size: 40px;">CONTACT US!</h2><hr>
+	    <div class="row mt-4">
 	   	  <div class="col-sm-5">
-	   	  	<h3 id="contact_title">Location</h3>
+	   	  	<h3 id="contact_title">Our Location</h3>
 	   	  	<div class="z-depth-1-half map-container mb-3">
-	   	  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61776.701173067566!2d120.94454003474515!3d14.596578752415198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1625454870920!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	   	  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61776.701173067566!2d120.94454003474515!3d14.596578752415198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1625454870920!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	   	  	</div>
-
+            <hr class="clearfix w-100 d-md-none pb-3">
 	   	  	<h3 id="contact_title">Contact Details</h3>
 	   	    <div class="text-left">
                 <p style="color: #646464;">
@@ -85,20 +40,19 @@
                 </p>
 	   	    </div>
 	   	  </div>
+
 	   	  <div class="col-sm-7">
+	   	  	<hr class="w-100 d-md-none pb-3">
 	   	  	<h3 id="contact_title">Contact Form</h3>
-	   	  	<form class="py-4 px-4" style="background: #fff;">
+	   	  	<form class="px-4">
 	   	  	  <div class="form-group">
-	   	  	  	<label for="Full name">Name</label>
-	   	  	  	<input type="text" class="form-control" required name="name" placeholder="Ex. Juan Dela Cruz">
+	   	  	  	<input type="text" class="form-control" required name="name" placeholder="Fullname">
 	   	  	  </div>
 	   	  	  <div class="form-group">
-	   	  	  	<label for="Email">Email</label>
-	   	  	  	<input type="email" class="form-control" required name="email" placeholder="johndo@example.com">
+	   	  	  	<input type="email" class="form-control" required name="email" placeholder="Email Address">
 	   	  	  </div>
 	   	  	  <div class="form-group">
-	   	  	  	<label for="Messages">Message</label>
-	   	  	  	<textarea rows="5" class="form-control" required placeholder="Your messages"></textarea>
+	   	  	  	<textarea rows="8" class="form-control" required placeholder="Enter your message"></textarea>
 	   	  	  </div>
 	   	  	  <div class="form-group">
 	   	  	  	<input type="submit" class="btn btn-primary form-control" name="sendBtn" id="sendBtn" value="Send">
@@ -108,58 +62,17 @@
 	   </div>
 	</div>
 
-	<!-- Footer -->
-	<div class="footer">
-	  <div class="container py-5">
-	  	<div class="row">
-	  	  <div class="col-sm-3 mb-2">
-	  	  	<div class="text-left">
-	  	  	  <h4 id="footer_title">ABOUT</h4>
-	  	  	  <p id="footer_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-	  	  	</div>
-	  	  </div>
-	  	  <div class="col-sm-3 mb-4">
-	  	  	<div class="text-left">
-	  	  	  <h4 id="footer_title">CATEGORIES</h4>
-	  	  	  <a href="#" id="footer_link">T-Shirt</a><br>
-	  	  	  <a href="#" id="footer_link">Bag</a><br>
-	  	  	  <a href="#" id="footer_link">Wallet</a><br>
-	  	  	  <a href="#" id="footer_link">Mugs</a><br>
-	  	  	  <a href="#" id="footer_link">Case</a><br>
-	  	  	  <a href="#" id="footer_link">Pillow</a><br>
-	  	  	</div>
-	  	  </div>
-	  	  <div class="col-sm-3 mb-4">
-	  	  	<div class="text-left">
-	  	  	  <h4 id="footer_title">NAVIGATION</h4>
-	  	  	  <a href="shop.html" id="footer_link">Home</a><br>
-	  	  	  <a href="product.html" id="footer_link">Products</a><br>
-	  	  	  <a href="about.html" id="footer_link">About Us</a><br>
-	  	  	  <a href="faqs.html" id="footer_link">FAQs</a><br>
-	  	  	  <a href="contact.html" id="footer_link">Contact Us</a>
-	  	  	</div>
-	  	  </div>
-	  	  <div class="col-sm-3">
-	  	  	<div class="text-left">
-	  	  	  <h4 id="footer_title">CONTACT</h4>
-	  	  	  <p id="footer_text">
-	  	  	    123 Lucky St. Metro Manila<br>
-	  	  	    phone: 09123456789<br>
-	  	  	    tel: 1800-123
-	  	  	  </p>
-	  	  	  <div>
-	  	  	  	<a href="#"><img src="images/fblogo.png" class="img-fluid mr-1" id="footer_icon"></a>
-	  	  	  	<a href="#"><img src="images/instalogo.png" class="img-fluid mr-1" id="footer_icon"></a>
-	  	  	  	<a href="#"><img src="images/twitlogo.png" class="img-fluid mr-1" id="footer_icon"></a>
-	  	  	  	<a href="#"><img src="images/ytlogo.png" class="img-fluid mr-1" id="footer_icon"></a>
-	  	  	  </div>
-	  	  	</div>
-	  	  </div>
-	  	</div>
-	  </div>
-	</div>
-	<div id="footer2">
-	    <p class="text-center pt-3" id="copyright_text">Copyright © 2021 All rights reserved | Design by Perfect Page</p>	
-	</div>
+	<!-- Include Footer -->
+	<script src="js/footer.js"></script>
+
+
+	<!--- Javascript Link -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!--- Custom Javascript Link -->
+	<script src="js/my-js.js"></script>
 </body>
 </html>

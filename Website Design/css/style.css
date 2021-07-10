@@ -6,6 +6,8 @@ body {
 	background: #eee;
 }
 
+/***************************************** Navigation Page *******************************************/
+
 #carousel_img {
 	object-fit: cover;
 }
@@ -15,25 +17,32 @@ body {
 	border: 0;
 }
 
-#cat_container {
-	background: #fff;
-	transition: .5s
+#searchbtn:hover {
+    opacity: 0.9;
 }
 
-#cat_container:hover {
-	box-shadow: 2px 2px 10px 5px #bbb;
+/***************************************** Home Page **************************************************/
+
+/*Categories button section*/
+#nav-tabs li a{
+	border: 1px solid #343a40; 
+    color: #343a40;
+    margin: 5px;
 }
 
-#cat_img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
+#nav-tabs li a:hover{
+    background: #343a40;
+    color: #fff;
 }
 
-#cat_text {
-	color: #646464;
+#nav-tabs li a.active{
+    background: #343a40;
+    color: #fff;
 }
 
+
+
+/* Products Section */
 #prod_container:hover {
 	box-shadow: 2px 2px 10px 5px #bbb;
 }
@@ -64,7 +73,6 @@ body {
 }
 
 #footer_text, #footer_link {
-	text-align: justify;
 	font-size: 13px;
 	text-decoration: none;
 	color: #707070;
@@ -101,8 +109,49 @@ body {
 	display: block;
 }
 
+.carousel-control {
+	font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #555;
+     width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 3px;
+}
 
-/* Contact Us */
+.carousel-control:hover {
+	background: #222;
+    color: white;
+}
+
+/*For product carousel*/
+.owl-prev {
+	left: -30px;
+}
+
+.owl-next {
+	right: -30px;
+}
+
+.owl-prev, .owl-next {
+	position: absolute;
+	top: 30%;
+}
+
+.owl-prev span, .owl-next span {
+	font-size: 60px;
+	color: #787878;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+	background: transparent;
+}
+
+
+/***************************************** Contact Us Page **************************************************/
 #sendBtn {
 	background: #ff6a06;
 	border: 0;
@@ -123,10 +172,22 @@ padding-bottom:56.25%;
 position:relative;
 height:0;
 }
+
 .map-container iframe{
 left:0;
 top:0;
 height:100%;
 width:100%;
 position:absolute;
+}
+
+
+/***************************************** Login And Sign Up Section *******************************************/
+#signupBtn, #loginBtn {
+	background: #ff6a06;
+	color: #fff;
+}
+
+#signupBtn:hover, #loginBtn:hover {
+	opacity: 0.8;
 }

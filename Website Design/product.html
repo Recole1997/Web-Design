@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>V-Sketch | Products</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--- Font awesome link -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
+	<!--- CSS Link -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--- Custom CSS Link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- Include Login and Sign Up Modal -->
+    <script src="js/login&signup-modal.js"></script>
+
+	<!-- Include Navigation Bar -->
+	<script src="js/navbar.js"></script>
+
+	<!-- Body content -->
+    <div class="img-responsive">
+        <img src="images/product-banner.jpg" class="img-fluid">
+	</div>
+
+	<!-- Products Section -->
+	<div class="container mt-2 mb-4">
+	  <h1 class="py-4 text-center">Categories</h1>
+	  <div class="row justify-content-center">
+		<ul id="nav-tabs" class="nav"  id="myBtn">
+			<li class="nav-item">
+				<a class="btn btn-sm nav-link active" onclick="filterSelection('all')">All</a>
+			</li>
+			<li class="nav-item">
+				<a class="btn btn-sm nav-link" onclick="filterSelection('merch')">Merch - Ready Designs</a>
+			</li>
+			<li class="nav-item">
+				<a class="btn btn-sm nav-link" onclick="filterSelection('vector')">Vector Designs</a>
+			</li>
+			<li class="nav-item">
+				<a class="btn btn-sm nav-link" onclick="filterSelection('psd')">PSD T-shirt</a>
+			</li>
+		  </ul>
+	  </div>
+      
+      <h4 class="pt-4">All Products</h4>
+	  <div class="row">
+	  	<div class="col-sm-3 mycolumn merch">
+	  		<div class="card mb-2"  id="prod_container">
+			  <img src="images/prod1.jpg" class="card-img-top" alt="..." id="prod_img">
+			  <div class="card-body">
+			    <p class="card-title">Feather Design</p>
+			    <h5 class="card-text" id="prod_price">₱550</h5>
+			    <a href="#" class="stretched-link"></a>
+			  </div>
+			</div>
+	  	</div>
+	  	<div class="col-sm-3 mycolumn vector">
+	  		<div class="card mb-2"  id="prod_container">
+			  <img src="images/prod2.jpg" class="card-img-top" alt="..." id="prod_img">
+			  <div class="card-body">
+			    <p class="card-title">Feather Design</p>
+			    <h5 class="card-text" id="prod_price">₱550</h5>
+			    <a href="#" class="stretched-link"></a>
+			  </div>
+			</div>
+	  	</div>
+	  	<div class="col-sm-3 mycolumn psd">
+	  		<div class="card mb-2"  id="prod_container">
+			  <img src="images/banner.jpg" class="card-img-top" alt="..." id="prod_img">
+			  <div class="card-body">
+			    <p class="card-title">Feather Design</p>
+			    <h5 class="card-text" id="prod_price">₱550</h5>
+			    <a href="#" class="stretched-link"></a>
+			  </div>
+			</div>
+	  	</div>
+	  </div>
+	</div>
+
+	<!-- Include Footer -->
+	<script src="js/footer.js"></script>
+
+
+	<!--- Javascript Link -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--- Custom Javascript Link -->
+	<script src="js/my-js.js"></script>
+</body>
+</html>

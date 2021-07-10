@@ -1,3 +1,5 @@
+
+/******************** Product Filtering ***********************/
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
